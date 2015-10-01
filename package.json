@@ -1,0 +1,37 @@
+{
+  "name": "extensible-javascript-class",
+  "version": "0.0.1",
+  "description": "Base class to allow for simple, extensible classes with true inheritance.",
+  "main": "src/extensible-class.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "build-dist": "browserify src/extensible-class.js --standalone ExtensibleClass -o dist/extesnible-class.js -d ",
+    "build-example": "browserify examples/browserify/index.js -o examples/browserify/index.bundle.js -d",
+    "watch-example": "watchify examples/browserify/index.js -o examples/browserify/index.bundle.js -dv"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JeromeDane/Extensible-JavaScript-Class.git"
+  },
+  "keywords": [
+    "JavaScript",
+    "inheritance",
+    "extensible",
+    "classes",
+    "child",
+    "subclass",
+    "override"
+  ],
+  "author": "Jerome Dane <jeromedane.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JeromeDane/Extensible-JavaScript-Class/issues"
+  },
+  "homepage": "https://github.com/JeromeDane/Extensible-JavaScript-Class",
+  "devDependencies": {
+    "browserify": "^11.2.0",
+    "watchify": "^3.4.0"
+  }
+}
